@@ -14,8 +14,17 @@
     width: 80%;
     height: 80%;
     border-radius: 50%;
+    animation-name: drop;
+    animation-duration: 1.5s;
   }
-  
+  @keyframes drop {
+    from {
+      transform: translateY(-400px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
   /* TODO: make pieces red/blue,  depending on player 1/2 piece */
   
   .piece.p1 {
